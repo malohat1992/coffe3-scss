@@ -1,0 +1,178 @@
+$asosiyrang: #83888F;
+$ikkinchirang: #333D4B;
+@mixin box ( $Width:180px, $height:200px,$padding: 15px, $radius:5px,$bg: #F4F1EB, $color:#333D4B,
+$display: flex, $flex-direction:column, $gap: 20px, $padding-top: 30px,$box-shadow: 0px 0px 4px -1px){
+   width: $Width; 
+   height:$height ;
+   padding: $padding;
+   border-radius: $radius;
+   background: $bg;
+   color: $color;
+   display: $display;
+   flex-direction:$flex-direction;
+   gap: $gap;
+   padding-top: $padding-top;
+   box-shadow: $box-shadow;
+}
+@mixin btn ( $Width:200px, $height:40px, $padding:10px, $radius:5px,$bg: #10b4ca, 
+$color:hwb(0 95% 5%)5% 5%) {
+   width: $Width; 
+   height:$height;
+   padding: $padding;
+   border-radius: $radius;
+   background: $bg;
+   color: $color;
+}
+.card3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px;
+    &__list{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: $asosiyrang;
+        opacity: 0,1;
+        color: $asosiyrang;
+            font-size: 24px;
+            &__li{
+                display: flex;
+                gap: 20px;
+            }
+        &__link{
+            color: $asosiyrang;
+            font-size: 24px;
+        }
+        &__link:hover{
+            color: blue;
+        }
+        &__link1{
+            color: $ikkinchirang;
+            font-size: 24px;
+        }
+        &__link1:hover{
+            color: blue;
+        } 
+        &__hr{
+            border: 1px solid #83888F;
+            width: 180px;
+        }
+        
+    }
+    &__wrapper{
+        &__span{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0px;
+            &__img{
+                width: 20px;
+                height: 20px;
+            }
+            &__h1{
+                color: $asosiyrang
+            }
+        }
+        &__div{
+            display: flex;
+            gap: 30px;
+            &__box{
+                @include box();
+    
+            }
+            &__box:hover{
+                box-shadow:1px 1px 6px 1px;  
+    
+            }
+            &__box1{
+                @include box();
+                background: #0E8784;
+                color: #F4F1EB;
+    
+            }
+            &__box1:hover{
+                @include box();
+                box-shadow:1px 1px 6px 1px;  
+            }
+        }
+    }
+}
+.card4{
+   margin-left: 570px;
+   margin-right: 90px;
+    &__wrapper{
+        &__span{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0px;
+            &__img{
+                width: 20px;
+                height: 20px;
+            }
+            &__h1{
+                color: $asosiyrang
+            }
+        }
+        &__div{
+            display: flex;
+            gap: 30px;
+            &__box{
+                @include box();
+    
+            }
+            &__box:hover{
+                box-shadow:1px 1px 6px 1px;
+            }
+            &__box1{
+                @include box();
+                background: #0E8784;
+                color: #F4F1EB;
+    
+            }
+            &__box1:hover{
+                @include box();
+                box-shadow:1px 1px 6px 1px;
+            }
+        }
+    }
+}
+.card5{
+    width: 545px;
+    height: 170px;
+    background-image: url(./img/Bitmap\ \(1\).png);
+    text-align: start;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-left: 570px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    &__h5{
+        color: #5a5959;
+        font-size: 16px;
+    }
+    &__p{
+        color: #FFFFFF;
+        font-size: 23px;
+        width: 450px;
+    }
+    &__p:nth-child(5){
+        color: rgb(0, 255, 255);
+    }
+
+}
+.btn{
+    @include btn();
+    color: wheat;
+    margin-left: 980px;
+
+}
+.btn:hover{
+    @include btn();
+    color:blue;
+    background: #FFFFFF;
+    border: 2px solid blue;
+    transition: all 0,6s ease-in-out;
+}

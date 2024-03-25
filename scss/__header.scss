@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Fraunces" 9pt;
+    src: url('./fonts/fonts/Fraunces_9pt_Soft-Bold.ttf');
+}
+@font-face {
+    font-family: "Fraunces" 9pt;
+    src: url('./fonts/fonts/Fraunces_9pt_Soft-Light.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+$asosiyRang: #83888F;
+
+.containeir{
+    width: 1200px;
+    margin: 20px auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__list{
+        
+        display: flex;
+        gap: 30px;
+        &__link{
+            color:$asosiyRang;
+            
+        }
+        &__link:hover{
+            color: #090781;
+            
+        }
+    }
+}
+.card{
+    width: 100%;
+    height: 400px;
+    background-image: url(./img/Group\ 7.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 10px;
+    margin-top: 40px;
+    &__h1{
+        width: 432px;
+        font-size: 72px;
+        margin-top: 100px;
+        margin-left: 100px;
+        color: aliceblue;
+    
+    }
+    &__p{
+        width: 432px;
+        font-size: 16px;
+        color: aliceblue;
+        margin-left: 100px;
+    }
+}
+h1{
+    font-family: "Fraunces" 9pt;
+    font-weight: 900;
+    
+}
+h2{
+    font-family: "Fraunces" 9pt;
+    
+    
+}
+h5{
+    font-family: "Fraunces" 9pt;
+}
+p{
+    font-family: "Fraunces" 9pt;
+}
+a{
+    font-family: "Fraunces" 9pt;
+}
